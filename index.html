@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre el mundo de los rinocerontes y su conservación.">
+    <title>RHINO | Beyond the Wild</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <div class="progress" id="progress"></div>
+
+    <header class="header" id="header">
+
+        <nav class="nav container">
+
+            <a href="#inicio" class="logo">RHINO<span>.</span></a>
+
+            <ul class="nav__list" id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#especies">Especies</a></li>
+                <li><a href="#nosotros">Descubre</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#conservacion">Conservación</a></li>
+            </ul>
+
+            <div class="nav__actions">
+
+                <button id="theme" class="icon-button" aria-label="Cambiar tema">
+                    ◐
+                </button>
+
+                <button id="toggle" class="icon-button menu-toggle"
+                    aria-label="Abrir menú" aria-expanded="false">
+                    ☰
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Portada principal -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero__background"></div>
+
+            <div class="hero__content container">
+
+                <span class="eyebrow">NATURALEZA SIN LÍMITES — 01</span>
+
+                <h1>Gigantes de<br>la <em>naturaleza.</em></h1>
+
+                <p>
+                    Descubre una de las criaturas más impresionantes
+                    del planeta. Una historia de fuerza, evolución y supervivencia.
+                </p>
+
+                <div class="hero__buttons">
+
+                    <a href="#especies" class="button button--primary">
+                        Explorar especies ↗
+                    </a>
+
+                    <a href="#galeria" class="button button--outline">
+                        Ver galería
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero__bottom container">
+                <span>RHINO® — WILDLIFE EXPERIENCE</span>
+                <a href="#estadisticas">Desplazar ↓</a>
+            </div>
+
+        </section>
+
+        <!-- Estadísticas -->
+
+        <section class="statistics" id="estadisticas">
+
+            <div class="container statistics__grid">
+
+                <article class="stat reveal">
+                    <strong class="counter" data-target="5">0</strong>
+                    <p>Especies existentes</p>
+                </article>
+
+                <article class="stat reveal">
+                    <strong class="counter" data-target="2">0</strong>
+                    <p>Continentes</p>
+                </article>
+
+                <article class="stat reveal">
+                    <strong class="counter" data-target="50" data-suffix="+">0</strong>
+                    <p>Años de vida aproximados como máximo</p>
+                </article>
+
+                <article class="stat reveal">
+                    <strong class="counter" data-target="2300" data-suffix=" kg">0</strong>
+                    <p>Peso aproximado de un rinoceronte blanco adulto</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Especies -->
+
+        <section class="section container" id="especies">
+
+            <header class="section__header reveal">
+
+                <div>
+                    <span class="eyebrow">01 / BIODIVERSIDAD</span>
+                    <h2>Cinco especies.<br>Un mismo planeta.</h2>
+                </div>
+
+                <p>
+                    Explora las diferentes especies de rinocerontes
+                    que habitan actualmente en África y Asia.
+                </p>
+
+            </header>
+
+            <div class="filters reveal">
+
+                <button class="filter active" data-filter="todos">Todas</button>
+                <button class="filter" data-filter="africa">África</button>
+                <button class="filter" data-filter="asia">Asia</button>
+
+            </div>
+
+            <div class="species__grid">
+
+                <article class="species reveal" data-category="africa">
+
+                    <figure class="species__image">
+                        <img src="img/blanco.jpg" alt="Rinoceronte blanco" loading="lazy">
+                        <span>África</span>
+                    </figure>
+
+                    <div class="species__content">
+                        <span class="number">01 — ESPECIE</span>
+                        <h3>Rinoceronte blanco</h3>
+                        <p>Ceratotherium simum</p>
+
+                        <button class="details"
+                            data-name="Rinoceronte blanco"
+                            data-description="Es la especie de rinoceronte más grande. Habita principalmente en las sabanas africanas y se alimenta de pastos.">
+                            Descubrir especie ↗
+                        </button>
+                    </div>
+
+                </article>
+
+                <article class="species reveal" data-category="africa">
+
+                    <figure class="species__image">
+                        <img src="img/negro.jpg" alt="Rinoceronte negro" loading="lazy">
+                        <span>África</span>
+                    </figure>
+
+                    <div class="species__content">
+                        <span class="number">02 — ESPECIE</span>
+                        <h3>Rinoceronte negro</h3>
+                        <p>Diceros bicornis</p>
+
+                        <button class="details"
+                            data-name="Rinoceronte negro"
+                            data-description="Se caracteriza por su labio superior puntiagudo, adaptado para alimentarse de hojas, ramas y arbustos.">
+                            Descubrir especie ↗
+                        </button>
+                    </div>
+
+                </article>
+
+                <article class="species reveal" data-category="asia">
+
+                    <figure class="species__image">
+                        <img src="img/indio.jpg" alt="Rinoceronte indio" loading="lazy">
+                        <span>Asia</span>
+                    </figure>
+
+                    <div class="species__content">
+                        <span class="number">03 — ESPECIE</span>
+                        <h3>Rinoceronte indio</h3>
+                        <p>Rhinoceros unicornis</p>
+
+                        <button class="details"
+                            data-name="Rinoceronte indio"
+                            data-description="Posee un solo cuerno y una piel con grandes pliegues que le proporcionan una apariencia similar a una armadura.">
+                            Descubrir especie ↗
+                        </button>
+                    </div>
+
+                </article>
+
+                <article class="species reveal" data-category="asia">
+
+                    <figure class="species__image">
+                        <img src="img/java.jpg" alt="Rinoceronte de Java" loading="lazy">
+                        <span>Asia</span>
+                    </figure>
+
+                    <div class="species__content">
+                        <span class="number">04 — ESPECIE</span>
+                        <h3>Rinoceronte de Java</h3>
+                        <p>Rhinoceros sondaicus</p>
+
+                        <button class="details"
+                            data-name="Rinoceronte de Java"
+                            data-description="Es una de las especies de rinoceronte más amenazadas del mundo. Su población silvestre se encuentra en Indonesia.">
+                            Descubrir especie ↗
+                        </button>
+                    </div>
+
+                </article>
+
+                <article class="species reveal" data-category="asia">
+
+                    <figure class="species__image">
+                        <img src="img/sumatra.jpg" alt="Rinoceronte de Sumatra" loading="lazy">
+                        <span>Asia</span>
+                    </figure>
+
+                    <div class="species__content">
+                        <span class="number">05 — ESPECIE</span>
+                        <h3>Rinoceronte de Sumatra</h3>
+                        <p>Dicerorhinus sumatrensis</p>
+
+                        <button class="details"
+                            data-name="Rinoceronte de Sumatra"
+                            data-description="Es la especie de rinoceronte más pequeña y se distingue por el pelo que recubre parte de su cuerpo.">
+                            Descubrir especie ↗
+                        </button>
+                    </div>
+
+                </article>
+
+                <aside class="species__extra reveal">
+
+                    <span class="eyebrow">EL FUTURO ES AHORA</span>
+
+                    <h3>Su supervivencia también depende de nosotros.</h3>
+
+                    <a href="#conservacion" class="button button--primary">
+                        Conocer más ↗
+                    </a>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <!-- Descubrimiento -->
+
+        <section class="about" id="nosotros">
+
+            <figure class="about__image reveal">
+                <img src="img/rino-detalle.jpg" alt="Detalles de la piel de un rinoceronte" loading="lazy">
+            </figure>
+
+            <article class="about__content reveal">
+
+                <span class="eyebrow">02 / MÁS ALLÁ DE LO VISIBLE</span>
+
+                <h2>La fuerza tiene<br>su propia historia.</h2>
+
+                <p>
+                    Los rinocerontes representan millones de años de evolución.
+                    Su anatomía, comportamiento y capacidad de adaptación
+                    los convierten en animales extraordinarios.
+                </p>
+
+                <ul class="about__list">
+                    <li>01. Anatomía extraordinaria</li>
+                    <li>02. Ecosistemas únicos</li>
+                    <li>03. Comportamiento natural</li>
+                    <li>04. Evolución y supervivencia</li>
+                </ul>
+
+                <a href="#galeria" class="button button--primary">
+                    Explorar su mundo ↗
+                </a>
+
+            </article>
+
+        </section>
+
+        <!-- Galería -->
+
+        <section class="section container" id="galeria">
+
+            <header class="section__header reveal">
+
+                <div>
+                    <span class="eyebrow">03 / EXPERIENCIA VISUAL</span>
+                    <h2>Instantes salvajes.</h2>
+                </div>
+
+                <p>Una mirada diferente al mundo natural.</p>
+
+            </header>
+
+            <div class="gallery">
+
+                <figure class="gallery__item reveal">
+                    <button class="gallery__button" aria-label="Ampliar fotografía de rinoceronte">
+                        <img src="img/galeria1.jpg" alt="Rinoceronte en la sabana" loading="lazy">
+                    </button>
+                </figure>
+
+                <figure class="gallery__item reveal">
+                    <button class="gallery__button" aria-label="Ampliar fotografía de rinoceronte">
+                        <img src="img/galeria2.jpg" alt="Rinoceronte en su hábitat" loading="lazy">
+                    </button>
+                </figure>
+
+                <figure class="gallery__item reveal">
+                    <button class="gallery__button" aria-label="Ampliar fotografía de rinoceronte">
+                        <img src="img/galeria3.jpg" alt="Retrato de un rinoceronte" loading="lazy">
+                    </button>
+                </figure>
+
+                <figure class="gallery__item reveal">
+                    <button class="gallery__button" aria-label="Ampliar fotografía de rinoceronte">
+                        <img src="img/galeria4.jpg" alt="Rinoceronte en libertad" loading="lazy">
+                    </button>
+                </figure>
+
+            </div>
+
+        </section>
+
+        <!-- Conservación -->
+
+        <section class="conservation" id="conservacion">
+
+            <article class="container conservation__content reveal">
+
+                <span class="eyebrow">04 / NUESTRO COMPROMISO</span>
+
+                <h2>Que su historia<br>no termine aquí.</h2>
+
+                <p>
+                    La pérdida de hábitat y la caza furtiva amenazan
+                    la supervivencia de estas increíbles criaturas.
+                    Conocerlas es el primer paso para protegerlas.
+                </p>
+
+                <a href="https://www.savetherhino.org/"
+                    target="_blank" rel="noopener noreferrer"
+                    class="button button--primary">
+                    Apoyar la conservación ↗
+                </a>
+
+            </article>
+
+        </section>
+
+        <!-- Preguntas frecuentes -->
+
+        <section class="section container faq" id="preguntas">
+
+            <header class="reveal">
+                <span class="eyebrow">05 / CONOCIMIENTO</span>
+                <h2>Preguntas frecuentes.</h2>
+            </header>
+
+            <div class="faq__content reveal">
+
+                <details>
+                    <summary>¿Cuántas especies de rinocerontes existen?</summary>
+                    <p>Actualmente existen cinco especies de rinocerontes.</p>
+                </details>
+
+                <details>
+                    <summary>¿De qué están hechos sus cuernos?</summary>
+                    <p>Principalmente de queratina, la misma proteína presente en el cabello y las uñas.</p>
+                </details>
+
+                <details>
+                    <summary>¿Dónde viven los rinocerontes?</summary>
+                    <p>Habitan en diferentes regiones de África y Asia.</p>
+                </details>
+
+                <details>
+                    <summary>¿Qué comen los rinocerontes?</summary>
+                    <p>Son herbívoros y se alimentan de hierbas, hojas, ramas y otras plantas.</p>
+                </details>
+
+                <details>
+                    <summary>¿Cómo podemos protegerlos?</summary>
+                    <p>Apoyando la conservación, protegiendo sus hábitats y combatiendo el comercio ilegal de sus cuernos.</p>
+                </details>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+
+    <footer class="footer">
+
+        <div class="container footer__grid">
+
+            <article>
+                <a href="#inicio" class="logo">RHINO<span>.</span></a>
+                <p>Una experiencia digital dedicada a la naturaleza.</p>
+            </article>
+
+            <nav aria-label="Navegación secundaria">
+                <h3>Explorar</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#especies">Especies</a>
+                <a href="#galeria">Galería</a>
+                <a href="#conservacion">Conservación</a>
+            </nav>
+
+            <article>
+                <h3>Proyecto académico</h3>
+                <p>Desarrollo web</p>
+                <p>HTML · CSS · JavaScript</p>
+                <p>Universidad de Oriente</p>
+            </article>
+
+        </div>
+
+        <div class="container footer__bottom">
+            <p>© <span id="year"></span> RHINO. Todos los derechos reservados.</p>
+            <a href="#inicio">Volver arriba ↑</a>
+        </div>
+
+    </footer>
+
+    <!-- Ventana de información -->
+
+    <dialog class="modal" id="modal">
+
+        <button class="modal__close" id="closeModal" aria-label="Cerrar">
+            ×
+        </button>
+
+        <img id="modalImage" src="" alt="" hidden>
+
+        <span class="eyebrow">RHINO EXPERIENCE</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+    </dialog>
+
+    <button class="back-top" id="backTop" aria-label="Volver arriba">
+        ↑
+    </button>
+
+</body>
+
+</html>
